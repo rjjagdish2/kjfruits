@@ -131,7 +131,7 @@ $(document).ready(function () {
     }
 
     function setAcceptForAllInputs() {
-        const allowedExtensions = 'png|jpg|jpeg|gif|webp';
+        const allowedExtensions = '.png,.jpg,.jpeg,.gif,.webp';
         $('.multi_image_picker input[type=file]').each(function() {
             $(this).attr('accept', allowedExtensions);
         });
