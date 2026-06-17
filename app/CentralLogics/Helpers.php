@@ -816,6 +816,10 @@ class Helpers
             return false;
         }
 
+        if (function_exists('imagepalettetotruecolor') && !imageistruecolor($gdImage)) {
+            imagepalettetotruecolor($gdImage);
+        }
+
         /**
          * Preserve transparency
          */
