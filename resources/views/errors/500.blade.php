@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <title>Error 500 | GroFresh</title>
+    <title>Error 500 | KJ Fruits</title>
 
     <link rel="shortcut icon" href="favicon.ico">
 
