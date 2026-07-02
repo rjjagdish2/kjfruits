@@ -704,35 +704,35 @@
                             <div class="delivery--information-single flex-column mt-3">
                                 <div class="d-flex">
                                     <span class="name">
-                                        {{translate('name')}}
+                                        {{translate('Full Name')}}
                                     </span>
                                     <span class="info">{{$address['contact_person_name']}}</span>
                                 </div>
                                 <div class="d-flex">
-                                    <span class="name">{{translate('phone')}}</span>
+                                    <span class="name">{{translate('Mobile Number')}}</span>
                                     <span class="info">{{ $address['contact_person_number']}}</span>
                                 </div>
-                                @if($address['road'])
-                                    <div class="d-flex">
-                                        <span class="name">{{translate('road')}}</span>
-                                        <span class="info">#{{ $address['road']}}</span>
-                                    </div>
-                                @endif
                                 @if($address['house'])
                                     <div class="d-flex">
-                                        <span class="name">{{translate('house')}}</span>
+                                        <span class="name">{{translate('Flat / House No.')}}</span>
                                         <span class="info">#{{ $address['house']}}</span>
                                     </div>
                                 @endif
                                 @if($address['floor'])
                                     <div class="d-flex">
-                                        <span class="name">{{translate('floor')}}</span>
+                                        <span class="name">{{translate('Floor / Building Name')}}</span>
                                         <span class="info">#{{ $address['floor']}}</span>
+                                    </div>
+                                @endif
+                                @if($address['road'])
+                                    <div class="d-flex">
+                                        <span class="name">{{translate('Street Name / Road / Lane')}}</span>
+                                        <span class="info">#{{ $address['road']}}</span>
                                     </div>
                                 @endif
                                 @if($address['address'])
                                     <div class="d-flex">
-                                        <span class="name">{{translate('address')}}</span>
+                                        <span class="name">{{translate('Area / Locality / Sector')}}</span>
                                         <span class="info">#{{ $address['address']}}</span>
                                     </div>
                                 @endif
@@ -985,16 +985,7 @@
                             </div>
                             <div class="row mb-3">
                                 <label for="requiredLabel" class="col-md-2 col-form-label input-label text-md-right">
-                                    {{translate('contact')}}
-                                </label>
-                                <div class="col-md-10 js-form-message">
-                                    <input type="text" class="form-control" name="contact_person_number"
-                                           value="{{$address['contact_person_number']}}" required>
-                                </div>
-                            </div>
-                            <div class="row mb-3">
-                                <label for="requiredLabel" class="col-md-2 col-form-label input-label text-md-right">
-                                    {{translate('name')}}
+                                    {{translate('Full Name')}}
                                 </label>
                                 <div class="col-md-10 js-form-message">
                                     <input type="text" class="form-control" name="contact_person_name"
@@ -1003,17 +994,30 @@
                             </div>
                             <div class="row mb-3">
                                 <label for="requiredLabel" class="col-md-2 col-form-label input-label text-md-right">
-                                    {{translate('address')}}
+                                    {{translate('Mobile Number')}}
                                 </label>
                                 <div class="col-md-10 js-form-message">
-                                    <input type="text" class="form-control" name="address"
-                                           value="{{$address['address']}}"
-                                           required>
+                                    <input type="text" class="form-control" name="contact_person_number"
+                                           value="{{$address['contact_person_number']}}" required>
                                 </div>
                             </div>
                             <div class="row mb-3">
                                 <label for="requiredLabel" class="col-md-2 col-form-label input-label text-md-right">
-                                    {{translate('road')}}
+                                    {{translate('Flat / House No.')}}
+                                </label>
+                                <div class="col-md-4 js-form-message">
+                                    <input type="text" class="form-control" name="house" value="{{$address['house']}}">
+                                </div>
+                                <label for="requiredLabel" class="col-md-2 col-form-label input-label text-md-right">
+                                    {{translate('Floor / Building Name')}}
+                                </label>
+                                <div class="col-md-4 js-form-message">
+                                    <input type="text" class="form-control" name="floor" value="{{$address['floor']}}">
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <label for="requiredLabel" class="col-md-2 col-form-label input-label text-md-right">
+                                    {{translate('Street Name / Road / Lane')}}
                                 </label>
                                 <div class="col-md-10 js-form-message">
                                     <input type="text" class="form-control" name="road" value="{{$address['road']}}">
@@ -1021,16 +1025,12 @@
                             </div>
                             <div class="row mb-3">
                                 <label for="requiredLabel" class="col-md-2 col-form-label input-label text-md-right">
-                                    {{translate('house')}}
+                                    {{translate('Area / Locality / Sector')}}
                                 </label>
-                                <div class="col-md-4 js-form-message">
-                                    <input type="text" class="form-control" name="house" value="{{$address['house']}}">
-                                </div>
-                                <label for="requiredLabel" class="col-md-2 col-form-label input-label text-md-right">
-                                    {{translate('floor')}}
-                                </label>
-                                <div class="col-md-4 js-form-message">
-                                    <input type="text" class="form-control" name="floor" value="{{$address['floor']}}">
+                                <div class="col-md-10 js-form-message">
+                                    <input type="text" class="form-control" name="address"
+                                           value="{{$address['address']}}"
+                                           required>
                                 </div>
                             </div>
 

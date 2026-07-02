@@ -3178,4 +3178,10 @@
   'username of codecanyon' => 'Username of codecanyon',
   'the purchase code' => 'The purchase code',
   'Username' => 'Username',
+  'Full Name' => 'Full Name',
+  'Mobile Number' => 'Mobile Number',
+  'Flat / House No.' => 'Flat / House No.',
+  'Floor / Building Name' => 'Floor / Building Name',
+  'Street Name / Road / Lane' => 'Street Name / Road / Lane',
+  'Area / Locality / Sector' => 'Area / Locality / Sector',
 );

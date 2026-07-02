@@ -2111,4 +2111,10 @@
   '3rd party configuration' => '3rd party configuration',
   'Message updated!' => 'Message updated!',
   'Default' => 'Default',
+  'Full Name' => 'पूरा नाम',
+  'Mobile Number' => 'मोबाइल नंबर',
+  'Flat / House No.' => 'फ्लैट / मकान संख्या',
+  'Floor / Building Name' => 'मंजिल / भवन का नाम',
+  'Street Name / Road / Lane' => 'गली का नाम / सड़क / लेन',
+  'Area / Locality / Sector' => 'क्षेत्र / इलाका / सेक्टर',
 );

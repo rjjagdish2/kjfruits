@@ -2786,4 +2786,10 @@
   'Enabling Facebook Login, customers can log in to the site using their existing Facebook credentials.' => 'Enabling Facebook Login  customers can log in to the site using their existing Facebook credentials.',
   'With Social Login, customers can log in using social media credentials. while new customers can create accounts instantly.' => 'With Social Login  customers can log in using social media credentials. while new customers can create accounts instantly.',
   'Please active at lest one social media login option between google or facebook.' => 'Please active at lest one social media login option between google or facebook.',
+  'Full Name' => 'পূর্ণ নাম',
+  'Mobile Number' => 'মোবাইল নম্বর',
+  'Flat / House No.' => 'ফ্ল্যাট / হাউস নং',
+  'Floor / Building Name' => 'ফ্লোর / বিল্ডিং নাম',
+  'Street Name / Road / Lane' => 'রাস্তার নাম / রাস্তা / লেন',
+  'Area / Locality / Sector' => 'এলাকা / লোকালয় / সেক্টর',
 );
