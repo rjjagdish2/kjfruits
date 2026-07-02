@@ -712,30 +712,15 @@
                                     <span class="name">{{translate('Mobile Number')}}</span>
                                     <span class="info">{{ $address['contact_person_number']}}</span>
                                 </div>
-                                @if($address['house'])
-                                    <div class="d-flex">
-                                        <span class="name">{{translate('Flat / House No.')}}</span>
-                                        <span class="info">#{{ $address['house']}}</span>
-                                    </div>
-                                @endif
-                                @if($address['floor'])
-                                    <div class="d-flex">
-                                        <span class="name">{{translate('Floor / Building Name')}}</span>
-                                        <span class="info">#{{ $address['floor']}}</span>
-                                    </div>
-                                @endif
-                                @if($address['road'])
-                                    <div class="d-flex">
-                                        <span class="name">{{translate('Street Name / Road / Lane')}}</span>
-                                        <span class="info">#{{ $address['road']}}</span>
-                                    </div>
-                                @endif
-                                @if($address['address'])
-                                    <div class="d-flex">
-                                        <span class="name">{{translate('Area / Locality / Sector')}}</span>
-                                        <span class="info">#{{ $address['address']}}</span>
-                                    </div>
-                                @endif
+                                <div class="d-flex">
+                                    <span class="name">{{translate('Address')}}</span>
+                                    <span class="info">
+                                        {{ $address['house'] ? $address['house'] . ', ' : '' }}
+                                        {{ $address['floor'] ? $address['floor'] . ', ' : '' }}
+                                        {{ $address['road'] ? $address['road'] . ', ' : '' }}
+                                        {{ $address['address'] }}
+                                    </span>
+                                </div>
                                 @if($order->order_area)
                                     <div class="d-flex">
                                         <div class="name">{{translate('Area')}}</div>

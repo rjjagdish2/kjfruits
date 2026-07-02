@@ -2117,4 +2117,5 @@
   'Floor / Building Name' => 'मंजिल / भवन का नाम',
   'Street Name / Road / Lane' => 'गली का नाम / सड़क / लेन',
   'Area / Locality / Sector' => 'क्षेत्र / इलाका / सेक्टर',
+  'Address' => 'पता',
 );

@@ -2792,4 +2792,5 @@
   'Floor / Building Name' => 'ফ্লোর / বিল্ডিং নাম',
   'Street Name / Road / Lane' => 'রাস্তার নাম / রাস্তা / লেন',
   'Area / Locality / Sector' => 'এলাকা / লোকালয় / সেক্টর',
+  'Address' => 'ঠিকানা',
 );
